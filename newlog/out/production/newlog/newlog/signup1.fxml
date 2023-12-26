@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.MotionBlur?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="newlog.Signup1Controller">
+   <children>
+      <AnchorPane prefHeight="500.0" prefWidth="200.0" style="-fx-background-color: red;">
+         <effect>
+            <MotionBlur />
+         </effect></AnchorPane>
+      <TextField layoutX="212.0" layoutY="57.0" prefHeight="26.0" prefWidth="331.0" promptText="Name" />
+      <TextField layoutX="212.0" layoutY="91.0" prefHeight="26.0" prefWidth="331.0" promptText="username" />
+      <TextField layoutX="212.0" layoutY="128.0" prefHeight="26.0" prefWidth="331.0" promptText="Email" />
+      <TextField layoutX="212.0" layoutY="369.0" prefHeight="26.0" prefWidth="331.0" promptText="Password" />
+      <TextField layoutX="212.0" layoutY="201.0" prefHeight="82.0" prefWidth="331.0" promptText="Addresss" />
+      <TextField layoutX="212.0" layoutY="163.0" prefHeight="26.0" prefWidth="331.0" promptText="Mobile Number" />
+      <TextField layoutX="212.0" layoutY="297.0" prefHeight="26.0" prefWidth="160.0" promptText="Blood Group" />
+      <DatePicker layoutX="212.0" layoutY="335.0" promptText="Date of Birth" />
+      <Button layoutX="283.0" layoutY="425.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="190.0" style="-fx-background-color: skyblue;" text="Create" />
+      <Label alignment="CENTER" layoutX="253.0" layoutY="18.0" prefHeight="26.0" prefWidth="248.0" text="New User From">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

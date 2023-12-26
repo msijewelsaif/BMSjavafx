@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="newlog.Signup1Controller">
+   <children>
+      <AnchorPane prefHeight="500.0" prefWidth="200.0" style="-fx-background-color: #e60000;">
+         <children>
+            <Text layoutX="25.0" layoutY="182.0" strokeType="OUTSIDE" strokeWidth="0.0" text="USER " textAlignment="CENTER" wrappingWidth="143.73675537109375">
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font>
+               <stroke>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </stroke>
+            </Text>
+            <Button fx:id="back" layoutX="71.0" layoutY="461.0" mnemonicParsing="false" onAction="#backpage" style="-fx-background-color: black;" text="&lt;&lt;&lt;" textFill="WHITE">
+               <font>
+                  <Font name="Arial Black" size="13.0" />
+               </font>
+            </Button>
+         </children></AnchorPane>
+      <TextField fx:id="txt_name" layoutX="212.0" layoutY="57.0" prefHeight="26.0" prefWidth="331.0" promptText="Name" />
+      <TextField fx:id="txt_username" layoutX="212.0" layoutY="91.0" prefHeight="26.0" prefWidth="331.0" promptText="username" />
+      <TextField fx:id="txt_email" layoutX="212.0" layoutY="128.0" prefHeight="26.0" prefWidth="331.0" promptText="Email" />
+      <TextField fx:id="txt_address" layoutX="212.0" layoutY="201.0" prefHeight="82.0" prefWidth="331.0" promptText="Addresss" />
+      <TextField fx:id="txt_phone" layoutX="212.0" layoutY="163.0" prefHeight="26.0" prefWidth="331.0" promptText="Mobile Number" />
+      <TextField fx:id="txt_bloodgroup" layoutX="212.0" layoutY="297.0" prefHeight="26.0" prefWidth="160.0" promptText="Blood Group" />
+      <DatePicker fx:id="txt_date_of_birth" layoutX="212.0" layoutY="335.0" promptText="Date of Birth" />
+      <Button fx:id="btn_create" layoutX="283.0" layoutY="425.0" mnemonicParsing="false" onAction="#create" prefHeight="26.0" prefWidth="190.0" style="-fx-background-color: skyblue;" text="Create" />
+      <Label alignment="CENTER" layoutX="253.0" layoutY="18.0" prefHeight="26.0" prefWidth="248.0" text="New User From">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@photos/user_plus-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <PasswordField fx:id="password" layoutX="209.0" layoutY="370.0" prefHeight="26.0" prefWidth="331.0" />
+   </children>
+</AnchorPane>
